@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: 
+
+Sitemap: https://otavioilha15.github.io/otavio-progamador/sitemap.xml
+
+# Crawl delay (em segundos) - permite melhor controle de rastreamento
+Crawl-delay: 1
