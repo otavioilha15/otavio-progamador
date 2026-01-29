@@ -18,6 +18,9 @@
     <link rel="canonical" href="https://otavioilha15.github.io/otavio-progamador">
     
     <title>Otavio - Desenvolvedor Full Stack & Designer Web | Portfólio Profissional</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     
@@ -59,25 +62,47 @@
                 <div class="shape shape-3"></div>
             </div>
             <div class="hero-content">
-                <div class="hero-tag">🚀 Bem-vindo ao meu portfólio</div>
-                <h1 class="hero-title">Transformando Ideias em Realidade Digital</h1>
-                <p class="hero-subtitle">Sou Otavio, um desenvolvedor full stack apaixonado por criar soluções web inovadoras e experiências digitais extraordinárias</p>
-                <div class="hero-buttons">
-                    <button id="btn-explorar" class="btn-primary btn-lg">Explorar Meu Trabalho</button>
-                    <button class="btn-secondary btn-lg">Ver Meus Projetos</button>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <span class="stat-number">10+</span>
-                        <span class="stat-label">Projetos</span>
+                <div class="hero-grid">
+                    <div class="hero-left">
+                        <div class="hero-tag">🚀 Bem-vindo ao meu portfólio</div>
+                        <h1 class="hero-title">Transformo ideias em produtos digitais de alto impacto</h1>
+                        <p class="hero-subtitle">Sou Otavio — desenvolvedor full stack. Entrego sites, lojas e aplicações otimizadas, acessíveis e com design centrado no usuário.</p>
+                        <div class="hero-buttons">
+                            <button id="btn-explorar" class="btn-primary btn-lg">Ver Projetos</button>
+                            <button class="btn-secondary btn-lg">Contratar Agora</button>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label">Projetos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">5+</span>
+                                <span class="stat-label">Clientes</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">2+</span>
+                                <span class="stat-label">Anos</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number">5+</span>
-                        <span class="stat-label">Clientes</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">2+</span>
-                        <span class="stat-label">Anos</span>
+                    <div class="hero-right">
+                        <div class="mockup">
+                            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <defs>
+                                    <linearGradient id="g1" x1="0" x2="1">
+                                        <stop offset="0%" stop-color="#6B5BFF"/>
+                                        <stop offset="100%" stop-color="#00C2FF"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect rx="18" ry="18" x="4" y="4" width="392" height="292" fill="url(#g1)" opacity="0.12" />
+                                <rect rx="12" ry="12" x="24" y="24" width="352" height="232" fill="#fff"/>
+                                <rect x="36" y="36" width="300" height="28" rx="6" fill="#f5f7ff"/>
+                                <rect x="36" y="76" width="120" height="120" rx="8" fill="#f0f4ff"/>
+                                <rect x="168" y="76" width="180" height="32" rx="6" fill="#f5f7ff"/>
+                                <rect x="168" y="116" width="180" height="80" rx="8" fill="#fafcff"/>
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -380,6 +405,46 @@
                 <div class="service-card">
                     <h3>Manutenção e Suporte</h3>
                     <p>Suporte continuo, atualizações e melhorias para seus projetos web.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRICING / PLANOS SECTION -->
+        <section id="planos" class="pricing">
+            <h2>Planos</h2>
+            <p class="pricing-subtitle">Escolha o plano ideal para seu projeto — sem complicação.</p>
+            <div class="pricing-grid">
+                <div class="plan-card">
+                    <h3>Básico</h3>
+                    <p class="price">R$499</p>
+                    <ul>
+                        <li>Site institucional (até 5 páginas)</li>
+                        <li>Design responsivo</li>
+                        <li>SEO básico</li>
+                    </ul>
+                    <button class="btn-primary">Contratar</button>
+                </div>
+
+                <div class="plan-card plan-featured">
+                    <h3>Profissional</h3>
+                    <p class="price">R$1.499</p>
+                    <ul>
+                        <li>Loja virtual ou aplicação</li>
+                        <li>Integrações (pagamentos, APIs)</li>
+                        <li>Otimização de performance</li>
+                    </ul>
+                    <button class="btn-primary">Contratar</button>
+                </div>
+
+                <div class="plan-card">
+                    <h3>Avançado</h3>
+                    <p class="price">R$3.499</p>
+                    <ul>
+                        <li>Plataforma completa</li>
+                        <li>Suporte e manutenção</li>
+                        <li>Arquitetura escalável</li>
+                    </ul>
+                    <button class="btn-primary">Contratar</button>
                 </div>
             </div>
         </section>
