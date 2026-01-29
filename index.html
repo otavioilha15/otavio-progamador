@@ -3,15 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Otavio — desenvolvedor full stack e designer web. Projetos, serviços e contato.">
-    <meta name="theme-color" content="#667eea">
     <title>Otavio - Desenvolvedor & Criativo</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
 </head>
 <body>
     <header>
-        <nav class="navbar" aria-label="Navegação principal">
+        <nav class="navbar">
             <div class="logo">Otavio</div>
             <ul class="nav-menu">
                 <li><a href="#inicio">Início</a></li>
@@ -26,10 +23,33 @@
     <main>
         <!-- HERO SECTION -->
         <section id="inicio" class="hero">
+            <div class="hero-bg-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
             <div class="hero-content">
-                <h1>Olá, eu sou Otavio</h1>
-                <p>Desenvolvedor Full Stack | Designer Web | Criador de Soluções Digitais</p>
-                <button id="btn-explorar" class="btn-primary">Saiba Mais Sobre Mim</button>
+                <div class="hero-tag">🚀 Bem-vindo ao meu portfólio</div>
+                <h1 class="hero-title">Transformando Ideias em Realidade Digital</h1>
+                <p class="hero-subtitle">Sou Otavio, um desenvolvedor full stack apaixonado por criar soluções web inovadoras e experiências digitais extraordinárias</p>
+                <div class="hero-buttons">
+                    <button id="btn-explorar" class="btn-primary btn-lg">Explorar Meu Trabalho</button>
+                    <button class="btn-secondary btn-lg">Ver Meus Projetos</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Projetos</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Clientes</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">2+</span>
+                        <span class="stat-label">Anos</span>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -176,25 +196,17 @@
         <section id="contato" class="contact">
             <h2>Entre em Contato</h2>
             <p class="contact-subtitle">Vamos conversar sobre seu projeto!</p>
-                <form id="contact-form" class="contact-form">
-                <label class="sr-only" for="name">Seu Nome</label>
-                <input id="name" name="name" type="text" placeholder="Seu Nome" required>
-
-                <label class="sr-only" for="email">Seu Email</label>
-                <input id="email" name="email" type="email" placeholder="Seu Email" required>
-
-                <label class="sr-only" for="subject">Assunto</label>
-                <select id="subject" name="subject" required>
+            <form id="contact-form" class="contact-form">
+                <input type="text" placeholder="Seu Nome" required>
+                <input type="email" placeholder="Seu Email" required>
+                <select required>
                     <option value="">Selecione um Assunto</option>
                     <option value="projeto">Novo Projeto</option>
                     <option value="consultoria">Consultoria</option>
                     <option value="suporte">Suporte</option>
                     <option value="outro">Outro</option>
                 </select>
-
-                <label class="sr-only" for="message">Sua Mensagem</label>
-                <textarea id="message" name="message" placeholder="Sua Mensagem" rows="6" required></textarea>
-
+                <textarea placeholder="Sua Mensagem" rows="6" required></textarea>
                 <button type="submit" class="btn-primary">Enviar Mensagem</button>
             </form>
             <div id="form-message"></div>
@@ -203,9 +215,9 @@
                 <h3>Outras Formas de Contato</h3>
                 <div class="contact-links">
                     <a href="mailto:otavioilha15@gmail.com"> Email</a>
-                    <a href="https://wa.me/5512992494622" target="_blank" rel="noopener noreferrer"> WhatsApp</a>
-                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"> LinkedIn</a>
-                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer"> GitHub</a>
+                    <a href="https://wa.me/5512992494622"> WhatsApp</a>
+                    <a href="#"> LinkedIn</a>
+                    <a href="#"> GitHub</a>
                 </div>
             </div>
         </section>
@@ -213,7 +225,7 @@
 
     <footer>
         <p>&copy; 2026 Otavio. Todos os direitos reservados.</p>
-        <p>Desenvolvido com ♥ e dedicação</p>
+        <p>Desenvolvido com  e muita dedicação</p>
     </footer>
 
     <script src="script.js"></script>

@@ -18,6 +18,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const btnExplorar = document.getElementById('btn-explorar');
     if (btnExplorar) {
         btnExplorar.addEventListener('click', function() {
+            document.getElementById('projetos').scrollIntoView({ behavior: 'smooth' });
+        });
+    }
+
+    // Secondary button - scroll to projects
+    const btnSecondary = document.querySelector('.btn-secondary');
+    if (btnSecondary) {
+        btnSecondary.addEventListener('click', function() {
+            document.getElementById('projetos').scrollIntoView({ behavior: 'smooth' });
+        });
+    }
             document.getElementById('sobre').scrollIntoView({ behavior: 'smooth' });
         });
     }

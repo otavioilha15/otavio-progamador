@@ -71,9 +71,9 @@ header {
 .hero {
     background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
     color: var(--white);
-    padding: 120px 2rem;
+    padding: 100px 2rem;
     text-align: center;
-    min-height: 600px;
+    min-height: 700px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,31 +88,162 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    background: radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.15) 0%, transparent 50%);
     pointer-events: none;
+}
+
+/* Animated background shapes */
+.hero-bg-shapes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.shape {
+    position: absolute;
+    opacity: 0.1;
+    border-radius: 50%;
+}
+
+.shape-1 {
+    width: 300px;
+    height: 300px;
+    background: var(--white);
+    top: -50px;
+    right: -50px;
+    animation: float 8s ease-in-out infinite;
+}
+
+.shape-2 {
+    width: 200px;
+    height: 200px;
+    background: var(--white);
+    bottom: -30px;
+    left: -30px;
+    animation: float 10s ease-in-out infinite reverse;
+}
+
+.shape-3 {
+    width: 150px;
+    height: 150px;
+    background: var(--white);
+    top: 50%;
+    left: 10%;
+    animation: float 12s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px) translateX(0px);
+    }
+    50% {
+        transform: translateY(30px) translateX(20px);
+    }
 }
 
 .hero-content {
     position: relative;
     z-index: 1;
+    max-width: 800px;
 }
 
-.hero-content h1 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    animation: slideDown 0.8s ease-out;
-    font-weight: 700;
+.hero-tag {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    animation: fadeInDown 0.8s ease-out;
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.hero-content p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    animation: slideUp 0.8s ease-out;
+.hero-title {
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    margin-bottom: 1.5rem;
+    animation: fadeInDown 0.8s ease-out 0.1s both;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.hero-subtitle {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    margin-bottom: 2.5rem;
+    animation: fadeInUp 0.8s ease-out 0.2s both;
     opacity: 0.95;
+    line-height: 1.6;
 }
 
-@keyframes slideDown {
+.hero-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    animation: fadeInUp 0.8s ease-out 0.3s both;
+}
+
+.btn-lg {
+    padding: 16px 40px !important;
+    font-size: 1.1rem !important;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+    padding: 14px 35px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-secondary:hover {
+    background: var(--white);
+    color: var(--primary);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    animation: fadeInUp 0.8s ease-out 0.4s both;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: 800;
+    display: block;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@keyframes fadeInDown {
     from {
         opacity: 0;
         transform: translateY(-30px);
@@ -123,7 +254,7 @@ header {
     }
 }
 
-@keyframes slideUp {
+@keyframes fadeInUp {
     from {
         opacity: 0;
         transform: translateY(30px);
@@ -494,7 +625,7 @@ main {
 .contact-form textarea:focus {
     outline: none;
     border-color: var(--primary);
-    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+    box-shadow: 0 0 0 4px rgba(0, 2, 10, 0.1);
 }
 
 #form-message {
